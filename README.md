@@ -1,7 +1,6 @@
-
 # Sentiment Analysis Tool
 
-The **Sentiment Analysis Tool** is a project designed to analyze text sentiments using machine learning models. The tool processes data, trains a model, and predicts sentiments for given text inputs such as tweets or product reviews.
+The **Sentiment Analysis Tool** is a project designed to analyze text sentiments using machine learning models. The tool processes data, trains a model, and predicts sentiments for given text inputs such as tweets or product reviews. If you'd like to try it out and contribute, follow the setup instructions below.
 
 ## Features
 
@@ -43,10 +42,12 @@ The **Sentiment Analysis Tool** is a project designed to analyze text sentiments
   Preprocesses collected tweets, predicts their sentiments using the trained model, and saves the predictions to a CSV file.
 
 ### Utilities
-- **`download_nlkt.py`**  
+- **`download_nltk.py`**  
   Downloads necessary NLTK resources (e.g., stopwords, tokenizers) for preprocessing.
 
 ## Setup Instructions
+
+To try out the project, follow these steps to set it up locally:
 
 1. **Clone the Repository**  
    ```bash
@@ -55,6 +56,7 @@ The **Sentiment Analysis Tool** is a project designed to analyze text sentiments
    ```
 
 2. **Install Dependencies**  
+   Install the required Python libraries by running:  
    ```bash
    pip install -r requirements.txt
    ```
@@ -70,19 +72,19 @@ The **Sentiment Analysis Tool** is a project designed to analyze text sentiments
    - Run `preprocess_data.py` to preprocess the Sentiment140 dataset.
 
 5. **Collect Tweets (Optional)**  
-   - Use `collect_tweets.py` to fetch tweets matching a specific query.  
-   - Run `preprocess_tweets.py` to clean and process the collected tweets.
+   - If you'd like to collect real-time tweets, run `collect_tweets.py` to fetch tweets matching a specific query.  
+   - Run `preprocess_tweets.py` to clean and preprocess the collected tweets.
 
 6. **Train the Model**  
-   Run `train_model.py` to train the sentiment analysis model.
+   Run `train_model.py` to train the sentiment analysis model on the preprocessed Sentiment140 dataset.
 
 7. **Test the Model**  
-   Use `test_model.py` or `test_collectedTweets.py` to test the model on new text or collected tweets.
+   Use either `test_model.py` to test the model with sample inputs or `test_collectedTweets.py` to test the model on collected tweets.
 
 ## Results
 
-- **Model Performance**: Accuracy and classification report for the trained model.
-- **Predicted Results**: Processed tweets with sentiment predictions saved to `predicted_results.csv`.
+- **Model Performance**: After training, the model's accuracy and classification report will be displayed.
+- **Predicted Results**: Processed tweets with sentiment predictions are saved to `predicted_results.csv` for further analysis.
 
 ## Tools and Libraries Used
 
