@@ -93,8 +93,3 @@ The **Sentiment Analysis Tool** is a project designed to analyze text sentiments
 - **Scikit-learn**: For model training and evaluation.
 - **Joblib**: To save and load models and vectorizers.
 
-## Limitations and Future Improvements
-
-- **Data Imbalance**: Sentiment140 may have an imbalanced distribution of sentiments.
-- **Advanced Models**: Consider integrating deep learning models like LSTMs or transformers for better performance.
-- **Web Interface**: Add a user-friendly interface using Flask or Streamlit.
